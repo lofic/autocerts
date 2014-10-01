@@ -37,10 +37,10 @@ file { "/path/to/${::fqdn}.priv.pem" :
 }
 ```
 
-If needed, create a CA, example : genca.rb
+If needed, create a CA, example : `genca.rb`
 
-Deploy some signed certificates and keys, example : gencert.rb
+Deploy some signed certificates and keys, example : `gencert.rb`
 
-Deploy some self-signed certificates and keys, example : genautocert.rb
+Deploy some self-signed certificates and keys, example : `genautocert.rb`
 
 
