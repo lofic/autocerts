@@ -58,8 +58,7 @@ service, via a script (i.e. node.rb) on the puppetmaster.
 
 When a node does a request for a catalog, `node.rb` is called.
 
-----------------------------------------------------------------------------------------------
-
+```
                                          +--------------+    - Web UI
        +------------------------------>  | The Foreman  |    - External Node Classifier
        |             +---------------->  |              |    - Puppet Certificate Authority
@@ -81,8 +80,7 @@ When a node does a request for a catalog, `node.rb` is called.
                         | Pup. agent |    | Pup. agent |    | Pup. agent | -------------+
                         +------------+    +------------+    +------------+
 
-----------------------------------------------------------------------------------------------
-
+```
 
 In node.rb we add a function that checks for the presence of specific keys for a
 pair node+specific puppet module. So we can set multiple keys used in different
@@ -97,7 +95,7 @@ Example below.
 
 Edit node.rb
 
-```
+```ruby
 SETTINGS = {
 # (...)
 }
