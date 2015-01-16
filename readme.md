@@ -49,8 +49,8 @@ Deploy some self-signed certificates and keys, example : `genautocert.rb`
 ## Use case with puppet and the Foreman
 
 You can use the ruby classes provided here in hooks to create the keys on demand when
-a node agent requests a catalog on the puppet master (i.e. with the certname in node.rb
-if you use The Foreman as an external node classifier).
+a node agent requests a catalog on the puppet master (i.e. with the certname = node name
+in node.rb if you use The Foreman as an external node classifier).
 
 Foreman can act as a classifier to Puppet through the External Nodes interface.
 This is a mechanism provided by Puppet to ask for configuration data from an external
