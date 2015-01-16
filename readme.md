@@ -59,9 +59,9 @@ service, via a script (i.e. node.rb) on the puppetmaster.
 When a node does a request for a catalog, `node.rb` is called.
 
 ```
-                                        +--------------+    - Web UI
-      +------------------------------>  | The Foreman  |    - External Node Classifier
-      |             +---------------->  |              |    - Puppet Certificate Authority
+                                        +--------------+   - Web UI
+      +------------------------------>  | The Foreman  |   - External Node Classifier
+      |             +---------------->  |              |   - Puppet Certificate Authority
       |             |                   +--------------+                               ^
       |             |                           ^                                      |
       | Smart Proxy |               Smart Proxy | - Get ENC (with node.rb)             |
