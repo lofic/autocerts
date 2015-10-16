@@ -1,6 +1,7 @@
 #!/usr/bin/ruby
 
 require 'ca' # Class CertificateAuthority
+#require_relative 'ca'
 require 'fileutils'
 
 FileUtils.mkdir_p('ca')

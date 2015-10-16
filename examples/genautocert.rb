@@ -2,6 +2,7 @@
 
 require 'fileutils'
 require 'autocert' # class SelfSignedCertificate
+#require_relative 'autocert'
 
 def createkey(hostname, pupmodule, pubfolder, prvfolder)
     return 'Already there' if

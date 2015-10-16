@@ -2,6 +2,7 @@
 
 require 'fileutils'
 require 'cert' # Class SignedCertificate
+#require_relative 'cert'
 
 def createkey(hostname, pupmodule, pubfolder, prvfolder, subject, ca_key_file,
 ca_crt_file, passphrase)
