@@ -17,7 +17,7 @@ class SelfSignedCertificate
 
         @cert = OpenSSL::X509::Certificate.new
         @cert.version = 2
-        @cert.serial = 0
+        @cert.serial = Time.now.to_i
         @cert.not_before = Time.now
         @cert.not_after = Time.now + (365 * 10 * 24 * 3600) # 10 years
         @cert.public_key =  @key.public_key
